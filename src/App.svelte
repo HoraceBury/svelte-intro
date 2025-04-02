@@ -2,6 +2,24 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+  import Card from './lib/Card.svelte';
+    import Vat from './lib/Vat.svelte';
+
+  const data = [{
+    title: "Product 1",
+    description: "This is a product you can buy only here",
+    price: 30,
+  },
+  {
+    title: "Product 2",
+    description: "This is a product you can buy only here",
+    price: 60,
+  },
+  {
+    title: "Product 3",
+    description: "This is a product you can buy only here",
+    price: 10,
+  }]
 </script>
 
 <main>
@@ -19,6 +37,16 @@
     <Counter />
   </div>
 
+  <div class="card">
+    <Vat />
+  </div>
+
+  <div class="card">
+    {#each data as item}
+		  <Card {...item} />
+	  {/each}
+  </div>
+
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
@@ -29,6 +57,12 @@
 </main>
 
 <style>
+  :global(.button) {
+    background-color: pink;
+    color: black;
+    border-width: 5px;
+  }
+
   .logo {
     height: 6em;
     padding: 1.5em;

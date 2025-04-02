@@ -5,6 +5,12 @@
   }
 </script>
 
-<button onclick={increment}>
+<button class="button" onclick={increment}>
   count is {count}
 </button>
+
+<style>
+  .button{
+    border-color: red;
+  }
+</style>
