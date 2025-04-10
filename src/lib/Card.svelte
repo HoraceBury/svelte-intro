@@ -1,12 +1,13 @@
 <script>
   import { hasVat } from './state.svelte';
   let { title, description, price } = $props();
+  const vatRate = 1.2;
 </script>
 
 <div class="card">
     <h2>{title}</h2>
     <p>{description}</p>
-    <p>${($hasVat ? price * 1.2 : price).toFixed(2)}</p>
+    <p>${($hasVat ? price * vatRate : price).toFixed(2)}</p>
 </div>
 
 <style>
