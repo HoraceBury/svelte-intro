@@ -6,7 +6,7 @@
 <div class="card">
     <h2>{title}</h2>
     <p>{description}</p>
-    <p>${$hasVat ? price * 1.2 : price}</p>
+    <p>${($hasVat ? price * 1.2 : price).toFixed(2)}</p>
 </div>
 
 <style>

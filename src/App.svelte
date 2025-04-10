@@ -3,12 +3,12 @@
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
   import Card from './lib/Card.svelte';
-    import Vat from './lib/Vat.svelte';
+  import Vat from './lib/Vat.svelte';
 
   const data = [{
     title: "Product 1",
     description: "This is a product you can buy only here",
-    price: 30,
+    price: 23.30,
   },
   {
     title: "Product 2",
@@ -18,7 +18,7 @@
   {
     title: "Product 3",
     description: "This is a product you can buy only here",
-    price: 10,
+    price: 10.15,
   }]
 </script>
 
