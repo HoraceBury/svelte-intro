@@ -1,3 +1,3 @@
 import { writable } from 'svelte/store';
 
-export const hasVat = writable(false);
+export const hasTax = writable(false);

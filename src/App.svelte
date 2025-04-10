@@ -3,7 +3,7 @@
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
   import Card from './lib/Card.svelte';
-  import Vat from './lib/VatToggle.svelte';
+  import TaxToggle from './lib/TaxToggle.svelte';
 
   const data = [{
     title: "Product 1",
@@ -38,7 +38,7 @@
   </div>
 
   <div class="card">
-    <Vat />
+    <TaxToggle />
   </div>
 
   <div class="card">
