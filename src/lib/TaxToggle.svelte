@@ -7,7 +7,9 @@
 </script>
 
 <div>
-  <button class="button" on:click={toggle}>Toggle Tax: {$hasTax ? "ON" : "OFF"}</button>
+  <button class="button" on:click={toggle}>
+    Toggle Tax: {$hasTax ? "ON" : "OFF"}
+  </button>
 </div>
 
 <style>
