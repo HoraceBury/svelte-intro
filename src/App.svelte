@@ -58,7 +58,7 @@
 
 <style>
   :global(.button) {
-    background-color: pink;
+    background-color: grey;
     color: black;
     border-width: 5px;
   }
