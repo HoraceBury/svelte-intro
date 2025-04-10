@@ -3,7 +3,7 @@
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
   import Card from './lib/Card.svelte';
-  import Vat from './lib/Vat.svelte';
+  import Vat from './lib/VatToggle.svelte';
 
   const data = [{
     title: "Product 1",
